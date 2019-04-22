@@ -1,0 +1,108 @@
+<html>
+<head>
+  <meta charset="utf-8" content="width=device-width , initial-scale=1 ">
+  <script src="jquerym/jquery.js"></script>
+	<script src="jquerym/jquery.mobile-1.4.5.js"></script>
+	<link rel="stylesheet" href="jquerym/jquery.mobile-1.4.5.css">
+  <title>Page Title</title>
+</head>
+<body>
+<!-- page1 / main -->
+<div data-role="page">
+  <div data-role="header">
+    <h1>Chocolate factory </h1>
+    <div data-role="navbar">
+    <ul>
+        <li><a href="#page" class="ui-btn-active">Barang</a></li>
+        <li><a href="#page2" data-transition="slide">Daftar belanja</a></li>
+        <li><a href="#page3" data-transition="slideup">My profile</a></li>
+    </ul>
+</div><!-- /navbar -->
+  </div>
+<ul data-role="listview" data-inset="true" data-divider-theme="a">
+    <li data-role="list-divider">Dark chocolate</li>
+     <li><a href="#page4">
+     <img src="./assets/assets1.png">
+    <h2>Dark Choco</h2>
+    <p>Dark Chocolate with belgian Chocolate and dairy milk</p></a>
+        <a href="#" data-rel="dialog" data-position-to="window" data-transition="pop">Purchase album</a>
+    </li>
+     <li><a href="#page5">
+     <img src="./assets/assets2.png">
+    <h2>Pure Choco</h2>
+    <p>Dark Chocolate with belgian Chocolate and non dairy milk</p></a>
+        <a href="#purchase" data-rel="popup" data-position-to="window" data-transition="pop">Purchase album</a>
+    </li>
+    <li data-role="list-divider">WHITE CHOCOLATE</li>
+      <li><a href="#">
+     <img src="./assets/asset3.png">
+    <h2>white Choco</h2>
+    <p>white chocolate full of dairy milk</p></a>
+        <a href="#purchase" data-rel="popup" data-position-to="window" data-transition="pop">Purchase album</a>
+    </li>
+     <li><a href="#">
+     <img src="./assets/assets4.png">
+    <h2>Pure Choco</h2>
+    <p>white chocolate pure 100%</p></a>
+        <a href="#purchase" data-rel="popup" data-position-to="window" data-transition="pop">Purchase album</a>
+    </li>
+</ul>
+<div data-role="footer" data-position="fixed" >
+    <div data-role="navbar">
+        <ul>
+            <li><a href="#page2">Daftarbelanja</a></li>
+        </ul>
+    </div><!-- /navbar -->
+</div>
+</div>
+<!---Page2---->
+
+  <div data-role="page" id="page2">
+  		<div data-role="header" data-theme="b" data-add-back-btn="true" data-back-btn-text="Back">
+  			<h3>Daftar belanja</h3>
+  		</div>
+  		<div data-role="content">
+        <p>
+         
+        </p>
+      </div>
+  </div>
+<!---Page3--->
+
+  <div data-role="page" id="page3">
+  		<div data-role="header" data-theme="w" data-add-back-btn="true" data-back-btn-text="Back">
+  			<h1>My profile</h1>
+  		</div>
+  		<div data-role="content">
+        <ul data-role="listview">
+          <li>Name : Andreas Prasetyo</li>
+          <li>NRP  : 26416096</li>
+          <li> link BitBucket : https://bitbucket.org/m26416096_Andreas_Prasetyo/utsppm/src</li>
+      </ul>
+  		</div>
+  </div>
+ <div data-role="page" id="page4">
+      <div data-role="header" data-theme="b" data-add-back-btn="true" data-back-btn-text="Back">
+        <h3>Darkchocolate</h3>
+      </div>
+      <div data-role="content">
+        <p>
+         This is pure dark chocolate from Belgian  
+         $0.50
+        </p>
+      </div>
+  </div>
+  <div data-role="page" id="page5">
+      <div data-role="header" data-theme="b" data-add-back-btn="true" data-back-btn-text="Back">
+        <h3>Darkchocolate</h3>
+      </div>
+      <div data-role="content">
+        <p>
+         This is pure dark chocolate from Belgian 
+         $1.90
+        </p>
+      </div>
+  </div>
+
+</body>
+</html>
